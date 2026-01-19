@@ -1,7 +1,7 @@
 # Midas Core - J.P. Morgan Virtual Internship
 
 **Production-Ready Transaction Processing Engine**  
-*Completed during J.P. Morgan Software Engineering Virtual Internship (2026)*
+*Completed during J.P. Morgan Software Engineering Virtual Internship*
 
 Spring Boot service handling real-time transaction processing with Kafka streaming, H2 persistence, external API integration, and REST balance endpoints.
 

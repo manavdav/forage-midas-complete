@@ -152,15 +152,23 @@ Integration Testing Patterns
 ```bash
 midas-core/
 ├── src/main/java/com/jpmorgan/
-│   ├── controller/
-│   │   └── BalanceController.java
+│   ├── component/
+|   │   └── BalanceRestController.java
+│   │   └── DatabaseConduit.java
+|   |   └── IncentiveQuerier.java
+|   |   └── TransactionHandler.java
+|   |   └── TransactionReceiver.java
 │   ├── entity/
 │   │   └── TransactionRecord.java
-│   ├── listener/
-│   │   └── TransactionKafkaListener.java
-│   └── service/
-│       ├── TransactionService.java
-│       └── BalanceService.java
+|   |   └── UserRecord.java
+│   ├── foundation/
+│   │   └── Balance.java
+|   |   └── Incentive.java
+|   |   └── Transaction.java
+│   └── repository/
+│       ├── TransactionRecordRepository.java
+│       └── UsrRepository.java
+|── MidasCoreApplication.java
 ├── src/test/java/
 │   └── Task*Tests.java
 ├── application.yml          (Kafka + H2 config)
